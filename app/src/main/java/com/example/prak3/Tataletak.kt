@@ -100,13 +100,30 @@ fun TataletakRowColumn(modifier: Modifier = Modifier) {
 
 
 @Composable
-fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
+fun TataletakBoxColumnRow(modifier: Modifier = Modifier){
     Column {
-            Box(
-                modifier = modifier,
-                contentAlignment = Alignment.Center
-            ) {
-
+        Box(
+            modifier = modifier,
+            contentAlignment = Alignment.Center
+        ) {
+            Column {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1")
+                    Text(text = "Col1_Row1_Komponen2")
+                    Text(text = "Col1_Row1_Komponen3")
+                }
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row2_Komponen1")
+                    Text(text = "Col1_Row2_Komponen2")
+                    Text(text = "Col1_Row2_Komponen3")
+                }
             }
+        }
     }
 }
