@@ -111,7 +111,7 @@ fun Tugas(modifier: Modifier = Modifier) {
                 text = "20240140008",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Black
+                color = Color.White
             )
 
             Spacer(
