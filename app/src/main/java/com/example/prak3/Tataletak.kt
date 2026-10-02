@@ -12,6 +12,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.ui.Alignment
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.height
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun TataletakColumn(modifier: Modifier = Modifier) {
@@ -103,8 +106,12 @@ fun TataletakRowColumn(modifier: Modifier = Modifier) {
 fun TataletakBoxColumnRow(modifier: Modifier = Modifier){
     Column {
         Box(
-            modifier = modifier,
+            modifier = modifier
+                .fillMaxWidth()
+                .height(110.dp)
+                .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
+
         ) {
             Column {
                 Row(
@@ -127,3 +134,5 @@ fun TataletakBoxColumnRow(modifier: Modifier = Modifier){
         }
     }
 }
+
+
