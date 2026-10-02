@@ -10,6 +10,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.ui.graphics.Color
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.unit.dp
+
+
 @Composable
 fun Tugas(modifier: Modifier = Modifier) {
     BoxWithConstraints(
@@ -31,6 +37,16 @@ fun Tugas(modifier: Modifier = Modifier) {
                 .fillMaxSize()
                 .background(Color.Black.copy(alpha = 0.25f))
         )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 20.dp)
+                .padding(top = screenHeight * 0.055f),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+        }
     }
 
 
