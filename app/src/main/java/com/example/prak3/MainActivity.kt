@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.prak3.ui.theme.Prak3Theme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +21,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             Prak3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TataletakBoxColumnRow(
+                    Tugas(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
+
+
         }
     }
 }
