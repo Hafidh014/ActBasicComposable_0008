@@ -85,6 +85,21 @@ fun Tugas(modifier: Modifier = Modifier) {
                     screenHeight * 0.055f
                 )
             )
+
+            Text(
+                text = "Nama",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+
+            Text(
+                text = "Muhammad Hafidh Nasrullah",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White,
+                textAlign = TextAlign.Center
+            )
         }
     }
 
