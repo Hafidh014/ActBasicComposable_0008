@@ -122,7 +122,7 @@ fun Tugas(modifier: Modifier = Modifier) {
                 painter = painterResource(
                     id = R.drawable.orang
                 ),
-                contentDescription = "Foto Masjidil Haram",
+                contentDescription = "Foto Di lingkaran",
                 modifier = Modifier
                     .fillMaxWidth(0.82f)
                     .aspectRatio(1f)
