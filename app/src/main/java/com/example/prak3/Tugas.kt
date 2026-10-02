@@ -7,7 +7,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.foundation.Image
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.ui.graphics.Color
 @Composable
 fun Tugas(modifier: Modifier = Modifier) {
     BoxWithConstraints(
@@ -22,6 +24,12 @@ fun Tugas(modifier: Modifier = Modifier) {
             contentDescription = "Background",
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Black.copy(alpha = 0.25f))
         )
     }
 
