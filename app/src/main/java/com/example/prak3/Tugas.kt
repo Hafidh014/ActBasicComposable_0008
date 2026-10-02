@@ -14,7 +14,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
-
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Text
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun Tugas(modifier: Modifier = Modifier) {
@@ -45,7 +50,25 @@ fun Tugas(modifier: Modifier = Modifier) {
                 .padding(top = screenHeight * 0.055f),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(
+                text = "Login",
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
 
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 12.sp,
+                color = Color.White,
+                textAlign = TextAlign.Center
+            )
+
+            Spacer(
+                modifier = Modifier.height(
+                    screenHeight * 0.045f
+                )
+            )
         }
     }
 
