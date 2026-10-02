@@ -102,6 +102,11 @@ fun TataletakRowColumn(modifier: Modifier = Modifier) {
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
     Column {
+            Box(
+                modifier = modifier,
+                contentAlignment = Alignment.Center
+            ) {
 
+            }
     }
 }
