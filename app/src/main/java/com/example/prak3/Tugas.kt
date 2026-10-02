@@ -100,6 +100,17 @@ fun Tugas(modifier: Modifier = Modifier) {
                 color = Color.White,
                 textAlign = TextAlign.Center
             )
+
+            Text(
+                text = "20240140008",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(
+                modifier = Modifier.height(12.dp)
+            )
         }
     }
 
