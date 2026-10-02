@@ -21,6 +21,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.draw.clip
 
 @Composable
 fun Tugas(modifier: Modifier = Modifier) {
@@ -110,6 +116,22 @@ fun Tugas(modifier: Modifier = Modifier) {
 
             Spacer(
                 modifier = Modifier.height(12.dp)
+            )
+
+            Image(
+                painter = painterResource(
+                    id = R.drawable.orang
+                ),
+                contentDescription = "Foto Masjidil Haram",
+                modifier = Modifier
+                    .fillMaxWidth(0.82f)
+                    .aspectRatio(1f)
+                    .clip(CircleShape)
+                    .border(
+                        BorderStroke(3.dp, Color.White),
+                        CircleShape
+                    ),
+                contentScale = ContentScale.Crop
             )
         }
     }
