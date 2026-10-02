@@ -20,6 +20,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.size
 
 @Composable
 fun Tugas(modifier: Modifier = Modifier) {
@@ -67,6 +68,21 @@ fun Tugas(modifier: Modifier = Modifier) {
             Spacer(
                 modifier = Modifier.height(
                     screenHeight * 0.045f
+                )
+            )
+
+            Image(
+                painter = painterResource(
+                    id = R.drawable.umy
+                ),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(110.dp),
+                contentScale = ContentScale.Fit
+            )
+
+            Spacer(
+                modifier = Modifier.height(
+                    screenHeight * 0.055f
                 )
             )
         }
